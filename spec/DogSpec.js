@@ -18,4 +18,8 @@ describe('Dog', function(){
 		expect(dog.fetch('gooble')).toBe('gooble');
 		expect(dog.fetch()).toBeNull();
 	});
+
+	it('can stop burglars', function(){
+		expect(dog.defend('house')).toBeTruthy();
+	});
 });
